@@ -2,16 +2,16 @@ namespace: '328092'
 flow:
   name: flow
   workflow:
-    - pyOp:
-        do:
-          328092.pyOp: []
-        navigate:
-          - SUCCESS: SUCCESS
     - jyOp:
         do:
           328092.jyOp: []
         navigate:
           - SUCCESS: pyOp
+    - pyOp:
+        do:
+          328092.pyOp: []
+        navigate:
+          - SUCCESS: SUCCESS
   results:
     - SUCCESS
 extensions:
