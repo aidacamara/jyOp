@@ -7,5 +7,7 @@ operation:
       def execute():
           a = '1'
           return locals()
+  outputs:
+    - a
   results:
     - SUCCESS

@@ -1,0 +1,26 @@
+namespace: '328092'
+flow:
+  name: flow
+  workflow:
+    - pyOp:
+        do:
+          328092.pyOp: []
+        navigate:
+          - SUCCESS: SUCCESS
+  results:
+    - SUCCESS
+extensions:
+  graph:
+    steps:
+      pyOp:
+        x: 339
+        'y': 195
+        navigate:
+          5418ab4c-f117-029d-31b2-ce5eecc08dc2:
+            targetId: 50379ae0-38ef-2a4e-76db-e60aafce877e
+            port: SUCCESS
+    results:
+      SUCCESS:
+        50379ae0-38ef-2a4e-76db-e60aafce877e:
+          x: 510
+          'y': 159
