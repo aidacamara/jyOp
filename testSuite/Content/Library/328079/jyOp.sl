@@ -5,7 +5,7 @@ operation:
     useJython: true
     script: |-
       def execute():
-          a = 7
+          a = '7';
           return locals()
   results:
     - SUCCESS
